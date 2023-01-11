@@ -1,0 +1,71 @@
+.flex_delivery__favorite_order {
+  max-width: 1920px;
+  min-height: auto;
+  margin: 170px auto 0;
+  background-image: url("../images/flex-delivery/flex-start-banner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 179px 0 117px;
+
+  @media (min-width: 949px) and (max-width: 1400px) {
+    padding: 86px 0;
+  }
+  @media (max-width: 949px) {
+    padding: 36px 0;
+  }
+
+  .flex_delivery_contant {
+    padding: clamp(24px, 3vw, 64px) clamp(14px, 3vw, 120px);
+    width: clamp(300px, 90vw, 1463px);
+    background: #ffffff;
+    box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+
+    .flex_contant_about {
+      font-style: normal;
+      font-weight: 700;
+      font-size: clamp(22px, 5vw, 52px);
+      line-height: clamp(32px, 5vw, 72px);
+      text-align: center;
+      letter-spacing: 0.01em;
+      color: #5f26d9;
+      margin-bottom: 40px;
+    }
+
+    .flex_btn {
+      width: max-content;
+
+      & > button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 16px 24px;
+        gap: 14px;
+        width: max-content;
+        background: #fb4b1e;
+        border: none;
+        border-radius: 100px;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 28px;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 28px;
+        color: #ffffff;
+        margin: 0 auto;
+
+        @media (max-width: 768px) {
+          padding: 8px 16px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
